@@ -1,0 +1,31 @@
+Vehicle_ID,Location,Speed,Timestamp,At_Intersection
+V001,Bishan - Seletar,50,2025-01-26 08:00:00,FALSE
+V002,Bishan - Ang Mo Kio,65,2025-01-26 08:01:00,TRUE
+V003,Bishan - Potong Pasir,45,2025-01-26 08:02:00,FALSE
+V004,Seletar - Punggol,70,2025-01-26 08:03:00,TRUE
+V005,Seletar - Ang Mo Kio,0,2025-01-26 08:04:00,FALSE
+V006,Ang Mo Kio - Serangoon,62,2025-01-26 08:05:00,TRUE
+V007,Potong Pasir - Serangoon,50,2025-01-26 08:06:00,FALSE
+V008,Potong Pasir - MacPherson,80,2025-01-26 08:07:00,TRUE
+V009,Punggol - Pasir Ris,40,2025-01-26 08:08:00,FALSE
+V010,Punggol - Sengkang,30,2025-01-26 08:09:00,FALSE
+V011,Sengkang - Serangoon,90,2025-01-26 08:10:00,TRUE
+V012,Sengkang - Hougang,0,2025-01-26 08:11:00,TRUE
+V013,Serangoon - Hougang,20,2025-01-26 08:12:00,FALSE
+V014,Hougang - Paya Lebar,0,2025-01-26 08:13:00,TRUE
+V015,Pasir Ris - Paya Lebar,50,2025-01-26 08:14:00,FALSE
+V016,Pasir Ris - Tampines,65,2025-01-26 08:15:00,TRUE
+V017,Paya Lebar - Tampines,0,2025-01-26 08:16:00,FALSE
+V018,Paya Lebar - MacPherson,95,2025-01-26 08:17:00,TRUE
+V019,MacPherson - Bedok,70,2025-01-26 08:18:00,TRUE
+V020,Bedok - Tampines,60,2025-01-26 08:19:00,FALSE
+V001,Bishan - Potong Pasir,55,2025-01-26 08:00:00,FALSE
+V002,Bishan - Seletar,70,2025-01-26 08:01:00,TRUE
+V003,Bishan - Ang Mo Kio,45,2025-01-26 08:02:00,FALSE
+V004,Hougang - Paya Lebar,50,2025-01-26 08:23:00,TRUE
+V005,Pasir Ris - Paya Lebar,90,2025-01-26 08:24:00,FALSE
+V006,Pasir Ris - Tampines,40,2025-01-26 08:25:00,TRUE
+V007,Paya Lebar - Tampines,0,2025-01-26 08:26:00,FALSE
+V008,Paya Lebar - MacPherson,30,2025-01-26 08:27:00,TRUE
+V009,MacPherson - Bedok,70,2025-01-26 08:28:00,TRUE
+V010,Bedok - Tampines,55,2025-01-26 08:29:00,FALSE
