@@ -1,0 +1,31 @@
+Location,Signal_Status,Timestamp
+Bishan - Seletar,Red,26/1/2025 8:00
+Bishan - Ang Mo Kio,Green,26/1/2025 8:01
+Bishan - Potong Pasir,Yellow,26/1/2025 8:02
+Seletar - Punggol,Red,26/1/2025 8:03
+Seletar - Ang Mo Kio,Green,26/1/2025 8:04
+Ang Mo Kio - Serangoon,Yellow,26/1/2025 8:05
+Potong Pasir - Serangoon,Green,26/1/2025 8:06
+Potong Pasir - MacPherson,Red,26/1/2025 8:07
+Punggol - Pasir Ris,Green,26/1/2025 8:08
+Punggol - Sengkang,Yellow,26/1/2025 8:09
+Sengkang - Serangoon,Red,26/1/2025 8:10
+Sengkang - Hougang,Green,26/1/2025 8:11
+Serangoon - Hougang,Red,26/1/2025 8:12
+Hougang - Paya Lebar,Yellow,26/1/2025 8:13
+Pasir Ris - Paya Lebar,Green,26/1/2025 8:14
+Pasir Ris - Tampines,Red,26/1/2025 8:15
+Paya Lebar - Tampines,Yellow,26/1/2025 8:16
+Paya Lebar - MacPherson,Green,26/1/2025 8:17
+MacPherson - Bedok,Red,26/1/2025 8:18
+Bedok - Tampines,Yellow,26/1/2025 8:19
+Bishan - Seletar,Red,26/1/2025 8:00
+Bishan - Ang Mo Kio,Green,26/1/2025 8:01
+Bishan - Potong Pasir,Yellow,26/1/2025 8:02
+Hougang - Paya Lebar,Red,26/1/2025 8:23
+Pasir Ris - Paya Lebar,Green,26/1/2025 8:24
+Pasir Ris - Tampines,Green,26/1/2025 8:25
+Paya Lebar - Tampines,Yellow,26/1/2025 8:26
+Paya Lebar - MacPherson,Green,26/1/2025 8:27
+MacPherson - Bedok,Red,26/1/2025 8:28
+Bedok - Tampines,Yellow,26/1/2025 8:29
