@@ -2,47 +2,22 @@ import csv
 from logic import *
 from datetime import datetime
 
-def parse_timestamp(timestamp_str, format):
-    """Parse a timestamp string into a datetime object using the specified format."""
-    return datetime.strptime(timestamp_str, format)
-
-def standardize_timestamp(timestamp_str, input_format, output_format):
-    """Convert a timestamp string from one format to another."""
-    dt = parse_timestamp(timestamp_str, input_format)
-    return dt.strftime(output_format)
-
 def read_csv(file_name, timestamp_column=None, input_format=None, output_format=None):
     data = []
     with open(file_name, 'r') as file:
         reader = csv.DictReader(file)
         for row in reader:
-            if timestamp_column and input_format and output_format:
-                # Standardize the timestamp if the column and formats are provided
-                row[timestamp_column] = standardize_timestamp(
-                    row[timestamp_column], input_format, output_format
-                )
             data.append(row)
     return data
 
-# Read traffic information and traffic light data
-# Define the timestamp formats
-traffic_info_format = "%Y-%m-%d %H:%M:%S"  # Input format for traffic_info
-traffic_light_format = "%d/%m/%Y %H:%M"    # Input format for traffic_light_info
-output_format = "%Y-%m-%d %H:%M:%S"        # Standardized output format
 
 # Read and standardize the data
 traffic_info = read_csv(
-    './data/traffic_information.csv',
-    timestamp_column='Timestamp',
-    input_format=traffic_info_format,
-    output_format=output_format
+    './data/traffic_information.csv'
 )
 
 traffic_light_info = read_csv(
-    './data/traffic_light.csv',
-    timestamp_column='Timestamp',
-    input_format=traffic_light_format,
-    output_format=output_format
+    './data/traffic_light.csv'
 )
 
 # Define predicates
