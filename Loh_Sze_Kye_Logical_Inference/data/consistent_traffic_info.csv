@@ -1,0 +1,28 @@
+Vehicle_ID,Location,Speed,Timestamp,At_Intersection,Direction,Allowed_Turns,Speed_Limit,Signal_Status
+V001,Bishan - Seletar,50,26/1/2025 8:00,FALSE,Straight,"Left, Right",60,Red
+V002,Bishan - Ang Mo Kio,65,26/1/2025 8:01,TRUE,Left ,"Straight, Left",50,Green
+V003,Bishan - Potong Pasir,45,26/1/2025 8:02,FALSE,Right,"Straight, Right",60,Yellow
+V004,Seletar - Punggol,70,26/1/2025 8:03,TRUE,Right,"Straight, Right",70,Red
+V005,Seletar - Ang Mo Kio,0,26/1/2025 8:04,FALSE,Left ,"Left, Right",55,Green
+V006,Ang Mo Kio - Serangoon,62,26/1/2025 8:05,TRUE,Left ,"Straight, Left",50,Yellow
+V007,Potong Pasir - Serangoon,50,26/1/2025 8:06,FALSE,Right,"Left, Right",60,Green
+V008,Potong Pasir - MacPherson,80,26/1/2025 8:07,TRUE,Straight,"Left, Right",50,Red
+V009,Punggol - Pasir Ris,40,26/1/2025 8:08,FALSE,Right,"Left, Right",80,Green
+V010,Punggol - Sengkang,30,26/1/2025 8:09,FALSE,Left ,"Left, Right",70,Yellow
+V011,Sengkang - Serangoon,90,26/1/2025 8:10,TRUE,Straight,"Straight, Left",60,Red
+V012,Sengkang - Hougang,0,26/1/2025 8:11,TRUE,Right,"Straight, Right",65,Green
+V013,Serangoon - Hougang,20,26/1/2025 8:12,FALSE,Right,"Left, Right",55,Red
+V014,Hougang - Paya Lebar,0,26/1/2025 8:13,TRUE,Straight,"Straight, Right",50,Yellow
+V015,Pasir Ris - Paya Lebar,50,26/1/2025 8:14,FALSE,Left ,"Left, Right",70,Green
+V016,Pasir Ris - Tampines,65,26/1/2025 8:15,TRUE,Straight,"Left, Right",80,Red
+V017,Paya Lebar - Tampines,0,26/1/2025 8:16,FALSE,Left ,"Straight, Right",70,Yellow
+V018,Paya Lebar - MacPherson,95,26/1/2025 8:17,TRUE,Right,"Left, Right",60,Green
+V019,MacPherson - Bedok,70,26/1/2025 8:18,TRUE,Straight,"Straight, Left",55,Red
+V020,Bedok - Tampines,60,26/1/2025 8:19,FALSE,Right,"Left, Right",80,Yellow
+V004,Hougang - Paya Lebar,50,26/1/2025 8:23,TRUE,Straight,"Straight, Right",50,Red
+V005,Pasir Ris - Paya Lebar,90,26/1/2025 8:24,FALSE,Left ,"Left, Right",70,Green
+V006,Pasir Ris - Tampines,40,26/1/2025 8:25,TRUE,Straight,"Left, Right",80,Green
+V007,Paya Lebar - Tampines,0,26/1/2025 8:26,FALSE,Left ,"Straight, Right",70,Yellow
+V008,Paya Lebar - MacPherson,30,26/1/2025 8:27,TRUE,Right,"Left, Right",60,Green
+V009,MacPherson - Bedok,70,26/1/2025 8:28,TRUE,Straight,"Straight, Left",55,Red
+V010,Bedok - Tampines,55,26/1/2025 8:29,FALSE,Right,"Left, Right",80,Yellow
