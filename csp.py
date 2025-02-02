@@ -1,6 +1,5 @@
 from logic import *
 import csv
-from z3 import Bool, Optimize, Not, sat
 
 def read_csv(file_name):
     data = []
@@ -59,7 +58,6 @@ def inconsistency_rule(x, y):
         Vehicle_ID(x), Vehicle_ID(y), Timestamp(x), Timestamp(y), Location(x), Location(y)
         )
     )
-
 keep_first_of_inconsistent = []
 make_consistent = []
 # Add inconsistency rules
@@ -71,7 +69,6 @@ for i in range(len(traffic_info)):
             inconsistency_rule(traffic_info[i], traffic_info[j])
             keep_first_of_inconsistent.append(traffic_info[j]) #keeps the first of the inconsistent data
     
-
 
 # Check for inconsistent data
 inconsistent = Symbol('Inconsistent_Data')
