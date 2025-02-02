@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic AI Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Traffic System</h2>
+        <ul>
+            <li data-section="route" onclick="loadContent('route')">🚗 Route Planning</li>
+            <li data-section="logic" onclick="loadContent('logic')">📜 Logical Inference</li>
+            <li data-section="bayesian" onclick="loadContent('bayesian')">📡 Bayesian Network</li>
+            <li data-section="optimisation" onclick="loadContent('optimisation')">⚙️ Optimization</li>
+        </ul>
+        
+    </div>
+
+    <div class="main-content" id="content">
+        <h2>Welcome to Traffic AI System</h2>
+        <p>Select a category from the sidebar.</p>
+    </div>
+</body>
+</html>
