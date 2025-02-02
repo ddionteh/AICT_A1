@@ -670,7 +670,7 @@
 # if __name__ == "__main__":
 #     app.run(debug=True)
     
-
+import time
 import heapq
 from collections import deque
 import math
@@ -1158,8 +1158,6 @@ def animate_algorithm():
     video = graph.animate_algorithm(algorithm, start, goal, path)
     return send_file(video, mimetype='video/mp4')
 
-
-
 @route_planning.route('/shortest-path', methods=['GET'])
 def get_shortest_path():
     start = request.args.get("start")
@@ -1176,6 +1174,8 @@ def get_shortest_path():
     graph = Graph(graph_data, coordinates)
     heuristic_func = calculate_manhattan_distance if heuristic_type == "manhattan" else calculate_euclidean_distance
 
+    start_time = time.perf_counter()  # Start the timer
+
     if algo == "bfs":
         path = graph.bfs(start, end)
     elif algo == "dfs":
@@ -1183,12 +1183,15 @@ def get_shortest_path():
     elif algo == "gbfs":
         path = graph.greedy_best_first_search(start, end, heuristic_func)
     elif algo == "astar":
-        start_time = request.args.get("start_time", "8:00 AM")
-        path = graph.a_star(start, end, heuristic_func, start_time)
+        start_time_request = request.args.get("start_time", "8:00 AM")
+        path = graph.a_star(start, end, heuristic_func, start_time_request)
     else:
         return jsonify({"error": "Invalid algorithm"}), 400
 
-    return jsonify({"path": path if path else "No path found"})
+    end_time = time.perf_counter()  # End the timer
+    runtime = end_time - start_time  # Calculate the time taken
+
+    return jsonify({"path": path if path else "No path found", "runtime": runtime})
 
 app = Flask(__name__)
 app.register_blueprint(route_planning)
